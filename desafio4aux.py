@@ -82,7 +82,7 @@ class Usuario:
         # Completar para escuchar todas las canciones de un artista seguido
 
         if artista in self.artista_seguidos:
-          print(f"{self.nombre} esta reporduciendo todas las canciones de  {arista.nombre}")
+          print(f"{self.nombre} esta reporduciendo todas las canciones de  {artista.nombre}")
           for cancion in artista.canciones:
               print(f"Ahora estas escuchando la {cancion} de {artista.nombre}")
         else:
@@ -133,7 +133,7 @@ class AppMusica:
         Muestra todos los artistas de la aplicación.
         """
         # Completar para mostrar todos los artistas
-         for artista in self.artista:
+        for artista in self.artista:
           print(f"Usuario: {artista.nombre}")
 
     def mostrar_canciones(self):
@@ -141,7 +141,7 @@ class AppMusica:
         Muestra todas las canciones de la aplicación.
         """
         # Completar para mostrar todas las canciones
-         for cancion in self.canciones:
+        for cancion in self.canciones:
           print(f"Usuario: {cancion.nombre}")
 
 artista1=Artista("Image code")
@@ -149,8 +149,8 @@ artista2=Artista("Lucas L.")
 
 cancion1=Cancion("bones",120,artista1)
 cancion2=Cancion("huesos",160,artista1)
-artisata1.lanzar_cancion(cancion1)
-artisata1.lanzar_cancion(cancion2)
+artista1.lanzar_cancion(cancion1)
+artista1.lanzar_cancion(cancion2)
 
 
 cancion3=Cancion("te amo",120,artista2)
